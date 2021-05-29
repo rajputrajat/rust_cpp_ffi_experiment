@@ -2,5 +2,8 @@
 #include <iostream>
 
 int main() {
-    std::cout << set_and_get("Hi from C!", 500) << std::endl;
+    const char in_string[] = "Hi from C!";
+    std::cout << set_and_get(in_string, 500) << std::endl;
+    std::cout << std::hex << &in_string << std::endl;
+    std::cout << in_string << std::endl;
 }
